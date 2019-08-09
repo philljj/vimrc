@@ -1,5 +1,5 @@
 " search as characters are entered
-set incsearch 
+set incsearch
 
 " Open new split panes to right and bottom, which feels more natural than Vim’s default.
 " https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
@@ -14,14 +14,14 @@ map <C-left> <C-w><left>
 map <C-right> <C-w><right>
 
 " flip through quickfix list with ctrl+j and ctrl+k
-map <C-j> :cn<CR> 
+map <C-j> :cn<CR>
 map <C-k> :cp<CR>
 
 " flip through tabs with shift+t
 nnoremap T gt
 
 " allow buffer in bakcground
-set hidden 
+set hidden
 
 " I like elflord :-)
 colorscheme elflord
