@@ -41,6 +41,11 @@ runtime! ftplugin/man.vim
 set visualbell
 set t_vb=
 
+" search for columns wider than 79
+" This replaces the Ex mode activation with Q
+"   https://vim.fandom.com/wiki/Highlight_long_lines#Searching
+noremap Q /\%>79v.\+
+
 " Change color scheme if using ssh.
 " Sometimes colors get weird depending on where
 " I'm ssh'ing in from. Usually not an issue though.
