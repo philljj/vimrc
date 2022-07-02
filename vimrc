@@ -52,3 +52,6 @@ noremap Q /\%>79v.\+
 "if $SSH_CONNECTION
   "colorscheme desert
 "endif
+
+" on win10 ubuntu subsystem need to manually set this for some reason
+" set hlsearch
