@@ -7,6 +7,16 @@ colorscheme elflord
 " Search as characters are entered.
 set incsearch
 
+" I guess new mac osx terminal likes to be special. Enable vim syntax:
+"   https://stackoverflow.com/questions/1653538/how-can-i-activate-vim-color-schemes-in-os-xs-terminal
+syntax on
+
+" enable row and col number in bottom right
+set ruler
+
+" on win10 ubuntu subsystem, and new mac osx need to manually set this for some reason
+set hlsearch
+
 " Open new split panes to right and bottom, which feels more natural
 " than Vim’s default:
 "   https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
@@ -53,5 +63,3 @@ noremap Q /\%>79v.\+
   "colorscheme desert
 "endif
 
-" on win10 ubuntu subsystem need to manually set this for some reason
-" set hlsearch
