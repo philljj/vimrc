@@ -7,9 +7,13 @@ colorscheme elflord
 " Search as characters are entered.
 set incsearch
 
+" Use cp to yank the name of current file.
+"   https://stackoverflow.com/questions/916875/yank-file-name-path-of-current-buffer-in-vim
+map cp :let @" = expand("%:p")<cr>
+
 " I guess new mac osx terminal likes to be special. Enable vim syntax:
 "   https://stackoverflow.com/questions/1653538/how-can-i-activate-vim-color-schemes-in-os-xs-terminal
-syntax on
+" syntax on
 
 " enable row and col number in bottom right
 set ruler
@@ -62,4 +66,3 @@ noremap Q /\%>79v.\+
 "if $SSH_CONNECTION
   "colorscheme desert
 "endif
-
