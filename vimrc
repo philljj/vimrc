@@ -60,6 +60,11 @@ set t_vb=
 "   https://vim.fandom.com/wiki/Highlight_long_lines#Searching
 noremap Q /\%>79v.\+
 
+" Set color column, and make it grey
+"   https://superuser.com/a/249856
+set colorcolumn=80
+highlight ColorColumn ctermbg=grey
+
 " Change color scheme if using ssh.
 " Sometimes colors get weird depending on where
 " I'm ssh'ing in from. Usually not an issue though.
