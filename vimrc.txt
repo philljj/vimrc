@@ -11,9 +11,10 @@ set incsearch
 "   https://stackoverflow.com/questions/916875/yank-file-name-path-of-current-buffer-in-vim
 map cp :let @" = expand("%:p")<cr>
 
-" I guess new mac osx terminal likes to be special. Enable vim syntax:
-"   https://stackoverflow.com/questions/1653538/how-can-i-activate-vim-color-schemes-in-os-xs-terminal
-" syntax on
+" Some distros (fedora) default to syntax on.
+" Others (Debian) need to be told.
+" Just force it on.
+syntax on
 
 " enable row and col number in bottom right
 set ruler
