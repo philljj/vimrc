@@ -11,6 +11,9 @@ set incsearch
 "   https://stackoverflow.com/questions/916875/yank-file-name-path-of-current-buffer-in-vim
 map cp :let @" = expand("%:p")<cr>
 
+" delete the current file
+nnoremap df :call delete(expand('%:p')) \| bdelete!<CR>
+
 " Some distros (fedora) default to syntax on.
 " Others (Debian) need to be told.
 " Just force it on.
